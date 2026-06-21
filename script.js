@@ -51,6 +51,22 @@ const modal = document.querySelector('.video-modal');
 document.querySelector('[data-open-video]').addEventListener('click', () => { modal.classList.add('is-open'); modal.setAttribute('aria-hidden', 'false'); });
 modal.querySelector('button').addEventListener('click', () => { modal.classList.remove('is-open'); modal.setAttribute('aria-hidden', 'true'); });
 
+const donationModal = document.querySelector('.donation-modal');
+const closeDonation = () => {
+  donationModal.classList.remove('is-open');
+  donationModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
+document.querySelectorAll('[data-donate]').forEach((button) => button.addEventListener('click', () => {
+  donationModal.classList.add('is-open');
+  donationModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  donationModal.querySelector('.donation-close').focus();
+}));
+donationModal.querySelector('.donation-close').addEventListener('click', closeDonation);
+donationModal.addEventListener('click', (event) => { if (event.target === donationModal) closeDonation(); });
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && donationModal.classList.contains('is-open')) closeDonation(); });
+
 document.querySelector('.contact-form').addEventListener('submit', (event) => {
   event.preventDefault();
   event.currentTarget.querySelector('.form-status').textContent = 'Mensagem preparada! Em breve conectaremos este formulário ao e-mail do Instituto.';

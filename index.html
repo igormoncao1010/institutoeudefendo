@@ -57,6 +57,7 @@
         <div class="floating-tag tag-two">transformar <span>✦</span></div>
         <div class="scroll-pill">role para descobrir <b>↓</b></div>
       </div>
+      <button class="donation-chip" type="button" data-donate><span>♥</span> Doe para esta causa <b>↗</b></button>
     </section>
 
     <div class="ticker" aria-hidden="true"><div>ACOLHIMENTO ✦ DIGNIDADE ✦ FÉ ✦ COMUNIDADE ✦ VIDA ✦ ACOLHIMENTO ✦ DIGNIDADE ✦ FÉ ✦ COMUNIDADE ✦ VIDA ✦</div></div>
@@ -75,6 +76,7 @@
         <div><strong data-count="3">0</strong><span>frentes de atuação conectadas</span></div>
         <div><strong data-count="1">0</strong><span>rede inteira movida pelo cuidado</span></div>
       </div>
+      <button class="donation-chip" type="button" data-donate><span>♥</span> Transforme cuidado em ação — doe agora <b>↗</b></button>
     </section>
 
     <section class="programs section" id="atuacao">
@@ -84,6 +86,7 @@
         <article class="program reveal" data-color="#ff7a59"><span class="program-number">02</span><div><p class="program-label">Comunidade</p><h3>Centro de Evangelização Santana</h3><p>Um espaço de encontro, formação e unidade que reúne iniciativas católicas no coração do Rio.</p></div><button aria-label="Saiba mais sobre o Centro de Evangelização">↗</button></article>
         <article class="program reveal" data-color="#9fe8ff"><span class="program-number">03</span><div><p class="program-label">Celebração</p><h3>Semana de Cristo Rei</h3><p>Música, oração e formação em uma grande celebração que entrou para o calendário oficial da Arquidiocese do Rio.</p></div><button aria-label="Saiba mais sobre a Semana de Cristo Rei">↗</button></article>
       </div>
+      <button class="donation-chip donation-chip-light" type="button" data-donate><span>♥</span> Apoie nossas frentes de atuação <b>↗</b></button>
     </section>
 
     <section class="story section" id="historias">
@@ -93,11 +96,13 @@
         <figure class="gallery-small"><img src="assets/social-1.png" alt="Publicação do Instituto Eu Defendo"></figure>
         <div class="story-sticker">desde<br><strong>2009</strong></div>
       </div>
+      <button class="donation-chip" type="button" data-donate><span>♥</span> Ajude esta rede a crescer <b>↗</b></button>
     </section>
 
     <section class="manifesto">
       <div class="manifesto-word">EU DEFENDO</div>
       <div class="manifesto-inner reveal"><p>Eu defendo o acolhimento.<br>Eu defendo a dignidade.<br><strong>E você, defende o quê?</strong></p><a href="#contato" class="circle-cta magnetic">Faça parte<br>desse movimento <span>↗</span></a></div>
+      <button class="donation-chip" type="button" data-donate><span>♥</span> Eu também defendo — quero doar <b>↗</b></button>
     </section>
 
     <section class="contact section" id="contato">
@@ -109,6 +114,7 @@
         <label>Sua mensagem<textarea name="mensagem" placeholder="Conte um pouco pra gente..."></textarea></label>
         <button class="button button-dark" type="submit">Enviar mensagem <span>↗</span></button><p class="form-status" aria-live="polite"></p>
       </form>
+      <button class="donation-chip" type="button" data-donate><span>♥</span> Prefere ajudar agora? Faça uma doação <b>↗</b></button>
     </section>
   </main>
 
@@ -118,6 +124,35 @@
   </footer>
 
   <div class="mobile-menu" aria-hidden="true"><button class="mobile-menu-close" type="button" aria-label="Fechar menu">×</button><a href="#sobre">Quem somos</a><a href="#atuacao">O que fazemos</a><a href="#historias">Nossa história</a><a href="#contato">Contato</a></div>
+  <div class="donation-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="donation-title">
+    <button class="donation-close" type="button" aria-label="Fechar doação">×</button>
+    <div class="donation-card">
+      <div class="donation-copy">
+        <p class="section-kicker">[ SUA AJUDA MOVE ESSA REDE ]</p>
+        <h2 id="donation-title">Doe. Cada gesto <em>defende uma história.</em></h2>
+        <p>Faça uma transferência bancária para o Instituto Eu Defendo:</p>
+        <dl class="bank-details">
+          <div><dt>Banco</dt><dd>Caixa Econômica Federal</dd></div>
+          <div><dt>Agência</dt><dd>0222</dd></div>
+          <div><dt>Conta</dt><dd>576085474-3</dd></div>
+        </dl>
+        <p class="donation-note">Antes de concluir, confira sempre o nome do favorecido exibido pelo seu banco.</p>
+      </div>
+      <div class="pix-box">
+        <div class="qr-placeholder" aria-label="QR Code Pix demonstrativo">
+          <svg viewBox="0 0 210 210" role="img" aria-hidden="true">
+            <rect width="210" height="210" fill="#fff"/><g fill="#10261d">
+              <path d="M12 12h58v58H12zm10 10v38h38V22zm8 8h22v22H30zM140 12h58v58h-58zm10 10v38h38V22zm8 8h22v22h-22zM12 140h58v58H12zm10 10v38h38v-38zm8 8h22v22H30z"/>
+              <path d="M88 14h14v14H88zm20 0h14v28h-14zM84 42h14v14H84zm22 18h14v14h-14zM82 80h16v16H82zm24 0h14v30h-14zm20 4h14v14h-14zm20-4h16v16h-16zm22 4h26v14h-26zM84 108h14v14H84zm22 10h24v14h-24zm32-14h14v30h-14zm22 4h14v14h-14zm20 10h14v14h-14zM82 140h16v14H82zm24 4h14v30h-14zm20-2h14v14h-14zm22 0h28v14h-28zm34 0h14v28h-14zM82 164h14v28H82zm22 20h28v14h-28zm34-18h14v32h-14zm22 2h14v14h-14zm18 16h20v14h-20z"/>
+            </g>
+          </svg>
+          <span>MODELO</span>
+        </div>
+        <strong>QR Code Pix demonstrativo</strong>
+        <p>Substitua pelo QR oficial antes de publicar.</p>
+      </div>
+    </div>
+  </div>
   <div class="video-modal" aria-hidden="true"><button aria-label="Fechar vídeo">×</button><div><span>▶</span><p>Em breve: a história do Instituto em vídeo.</p></div></div>
   <script src="script.js"></script>
 </body>
